@@ -146,7 +146,7 @@ async def archive(path, is_split, remove: bool):
     dir_p, p_name = ospath.split(path)
     r = "-r" if ospath.isdir(path) else ""
     if is_split:
-        split = "-s 40000m" if len(BOT.Options.zip_pswd) == 0 else "-v20000m"
+        split = "-s 40000m" if len(BOT.Options.zip_pswd) == 0 else "-v40000m"
     else:
         split = ""
     if len(BOT.Options.custom_name) != 0:
